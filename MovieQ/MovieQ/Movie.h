@@ -18,5 +18,5 @@
 @property NSString *title;
 @property NSString *thumbnailURL;
 @property NSString *synopsis;
-
+@property NSString *largeImageURL;
 @end

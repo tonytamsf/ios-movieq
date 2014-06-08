@@ -10,7 +10,7 @@
 #import "MovieCell.h"
 #import "Movie.h"
 #import "UIImageView+AFNetworking.h"
-
+#import "MovieDetailViewController.h"
 
 @interface MovieQueueViewController ()
 
@@ -91,7 +91,15 @@
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSLog(@"did selection %@", indexPath);
+    
+    MovieDetailViewController *vc = [[MovieDetailViewController alloc] init];
+    Movie *movie = self.movies[indexPath.row];
 
+    [self.navigationController pushViewController:vc animated:YES];
+    vc.movie = movie;
+}
 
 
 @end

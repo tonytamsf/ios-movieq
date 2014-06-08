@@ -42,6 +42,9 @@
                     </label>
                 </subviews>
             </tableViewCellContentView>
+            <accessibility key="accessibilityConfiguration">
+                <accessibilityTraits key="traits" none="YES" button="YES"/>
+            </accessibility>
             <connections>
                 <outlet property="synopsisLabel" destination="kKP-eQ-bCd" id="Isy-ir-sWM"/>
                 <outlet property="thumbnailImage" destination="gSR-6I-9Hp" id="6g3-TK-LDx"/>

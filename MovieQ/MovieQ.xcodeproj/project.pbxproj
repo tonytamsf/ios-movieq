@@ -26,6 +26,8 @@
 		D8AEEFF9194414100045A919 /* MovieQueueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AEEFF7194414100045A919 /* MovieQueueViewController.m */; };
 		D8AEEFFA194414100045A919 /* MovieQueueViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8AEEFF8194414100045A919 /* MovieQueueViewController.xib */; };
 		D8AEF002194415400045A919 /* Movie.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AEF001194415400045A919 /* Movie.m */; };
+		D8FAFF0F1944318A0036ED12 /* MovieDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8FAFF0D1944318A0036ED12 /* MovieDetailViewController.m */; };
+		D8FAFF101944318A0036ED12 /* MovieDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8FAFF0E1944318A0036ED12 /* MovieDetailViewController.xib */; };
 		D8FF8D531944188300EAA018 /* boxoffice.json in Resources */ = {isa = PBXBuildFile; fileRef = D8FF8D521944188300EAA018 /* boxoffice.json */; };
 		D8FF8D6119441F0C00EAA018 /* MovieCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D8FF8D5F19441F0C00EAA018 /* MovieCell.m */; };
 		D8FF8D6219441F0C00EAA018 /* MovieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8FF8D6019441F0C00EAA018 /* MovieCell.xib */; };
@@ -67,6 +69,9 @@
 		D8AEEFF8194414100045A919 /* MovieQueueViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MovieQueueViewController.xib; sourceTree = "<group>"; };
 		D8AEF000194415400045A919 /* Movie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Movie.h; sourceTree = "<group>"; };
 		D8AEF001194415400045A919 /* Movie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Movie.m; sourceTree = "<group>"; };
+		D8FAFF0C1944318A0036ED12 /* MovieDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieDetailViewController.h; sourceTree = "<group>"; };
+		D8FAFF0D1944318A0036ED12 /* MovieDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieDetailViewController.m; sourceTree = "<group>"; };
+		D8FAFF0E1944318A0036ED12 /* MovieDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MovieDetailViewController.xib; sourceTree = "<group>"; };
 		D8FF8D521944188300EAA018 /* boxoffice.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = boxoffice.json; sourceTree = "<group>"; };
 		D8FF8D5E19441F0C00EAA018 /* MovieCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieCell.h; sourceTree = "<group>"; };
 		D8FF8D5F19441F0C00EAA018 /* MovieCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieCell.m; sourceTree = "<group>"; };
@@ -139,6 +144,9 @@
 				D8FF8D5E19441F0C00EAA018 /* MovieCell.h */,
 				D8FF8D5F19441F0C00EAA018 /* MovieCell.m */,
 				D8FF8D6019441F0C00EAA018 /* MovieCell.xib */,
+				D8FAFF0C1944318A0036ED12 /* MovieDetailViewController.h */,
+				D8FAFF0D1944318A0036ED12 /* MovieDetailViewController.m */,
+				D8FAFF0E1944318A0036ED12 /* MovieDetailViewController.xib */,
 				D8AEEFD2194413A90045A919 /* MovieQueueAppDelegate.h */,
 				D8AEEFD3194413A90045A919 /* MovieQueueAppDelegate.m */,
 				D8AEEFF6194414100045A919 /* MovieQueueViewController.h */,
@@ -269,6 +277,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8FAFF101944318A0036ED12 /* MovieDetailViewController.xib in Resources */,
 				D8FF8D531944188300EAA018 /* boxoffice.json in Resources */,
 				D8AEEFFA194414100045A919 /* MovieQueueViewController.xib in Resources */,
 				D8AEEFCE194413A90045A919 /* InfoPlist.strings in Resources */,
@@ -326,6 +335,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8AEF002194415400045A919 /* Movie.m in Sources */,
+				D8FAFF0F1944318A0036ED12 /* MovieDetailViewController.m in Sources */,
 				D8AEEFD0194413A90045A919 /* main.m in Sources */,
 				D8FF8D6119441F0C00EAA018 /* MovieCell.m in Sources */,
 				D8AEEFF9194414100045A919 /* MovieQueueViewController.m in Sources */,

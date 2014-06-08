@@ -24,4 +24,6 @@ Status: active Register ed: 1 minute ago
 
 ### Keys
 Ctrl-CMD Up to switch between
-    
+
+### Useful
+- http://cocoadocs.org/docsets/AFNetworking/2.2.4/index.html

@@ -17,6 +17,8 @@
         self.title = dictionary[@"title"];
         self.thumbnailURL = dictionary[@"posters"][@"profile"];
         self.synopsis = dictionary[@"synopsis"];
+        self.largeImageURL = dictionary[@"posters"][@"original"];
+
     }
     
     return self;

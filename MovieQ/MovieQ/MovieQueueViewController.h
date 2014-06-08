@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MovieQueueViewController : UIViewController <UITableViewDataSource>
+@interface MovieQueueViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *movieListTableView;
 
 @end
