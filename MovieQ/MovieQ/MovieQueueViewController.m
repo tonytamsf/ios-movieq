@@ -9,6 +9,8 @@
 #import "MovieQueueViewController.h"
 #import "MovieCell.h"
 #import "Movie.h"
+#import "UIImageView+AFNetworking.h"
+
 
 @interface MovieQueueViewController ()
 
@@ -40,10 +42,6 @@
     if(resourcePathURL)
     {
         urlToLoad = [resourcePathURL URLByAppendingPathComponent:@"boxoffice.json"];
-        if(urlToLoad)
-        {
-
-        }
     }
     
     NSLog(@"NIB %@", [UINib
@@ -89,6 +87,7 @@
     
     cell.titleLabel.text = movie.title;
     cell.synopsisLabel.text = movie.synopsis;
+    [cell.thumbnailImage setImageWithURL:[NSURL URLWithString:movie.thumbnailURL]];
     return cell;
 }
 
