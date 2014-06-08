@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>8281FDE6-46C3-4013-A8B8-201246E162B4</string>
+	<key>IDESourceControlProjectName</key>
+	<string>MovieQ</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>384AAB30-0C38-40D8-AA11-04A262C8CFCB</key>
+		<string>ssh://github.com/tonytamsf/ios-movieq.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>MovieQ/MovieQ.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>384AAB30-0C38-40D8-AA11-04A262C8CFCB</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/tonytamsf/ios-movieq.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>384AAB30-0C38-40D8-AA11-04A262C8CFCB</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>384AAB30-0C38-40D8-AA11-04A262C8CFCB</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ios-movieq</string>
+		</dict>
+	</array>
+</dict>
+</plist>
