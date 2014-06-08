@@ -87,8 +87,8 @@
     NSLog(@"movie %@", movie.title);
     NSLog(@"movie %@", movie.synopsis);
     
-    //cell.titleLabel.text = movie.title;
-    //cell.synopsisLabel.text = movie.synopsis;
+    cell.titleLabel.text = movie.title;
+    cell.synopsisLabel.text = movie.synopsis;
     return cell;
 }
 
