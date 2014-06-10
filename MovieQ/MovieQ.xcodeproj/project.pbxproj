@@ -27,6 +27,10 @@
 		D8AEEFF9194414100045A919 /* MovieQueueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AEEFF7194414100045A919 /* MovieQueueViewController.m */; };
 		D8AEEFFA194414100045A919 /* MovieQueueViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8AEEFF8194414100045A919 /* MovieQueueViewController.xib */; };
 		D8AEF002194415400045A919 /* Movie.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AEF001194415400045A919 /* Movie.m */; };
+		D8BF05661946D1DD008F7659 /* MovieQueueTableViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D8BF05641946D1DD008F7659 /* MovieQueueTableViewControllerTest.m */; };
+		D8BF05671946D1DD008F7659 /* MovieQueueTableViewControllerTest.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8BF05651946D1DD008F7659 /* MovieQueueTableViewControllerTest.xib */; };
+		D8D1BA7B1946D41F005D1CA3 /* iOS Simulator Screen shot Jun 9, 2014, 10.49.53 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = D8D1BA791946D41F005D1CA3 /* iOS Simulator Screen shot Jun 9, 2014, 10.49.53 PM.png */; };
+		D8D1BA7C1946D41F005D1CA3 /* iOS Simulator Screen shot Jun 9, 2014, 10.49.32 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = D8D1BA7A1946D41F005D1CA3 /* iOS Simulator Screen shot Jun 9, 2014, 10.49.32 PM.png */; };
 		D8FAFF0F1944318A0036ED12 /* MovieDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8FAFF0D1944318A0036ED12 /* MovieDetailViewController.m */; };
 		D8FAFF101944318A0036ED12 /* MovieDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8FAFF0E1944318A0036ED12 /* MovieDetailViewController.xib */; };
 		D8FF8D531944188300EAA018 /* boxoffice.json in Resources */ = {isa = PBXBuildFile; fileRef = D8FF8D521944188300EAA018 /* boxoffice.json */; };
@@ -71,6 +75,11 @@
 		D8AEEFF8194414100045A919 /* MovieQueueViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MovieQueueViewController.xib; sourceTree = "<group>"; };
 		D8AEF000194415400045A919 /* Movie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Movie.h; sourceTree = "<group>"; };
 		D8AEF001194415400045A919 /* Movie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Movie.m; sourceTree = "<group>"; };
+		D8BF05631946D1DD008F7659 /* MovieQueueTableViewControllerTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieQueueTableViewControllerTest.h; sourceTree = "<group>"; };
+		D8BF05641946D1DD008F7659 /* MovieQueueTableViewControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieQueueTableViewControllerTest.m; sourceTree = "<group>"; };
+		D8BF05651946D1DD008F7659 /* MovieQueueTableViewControllerTest.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MovieQueueTableViewControllerTest.xib; sourceTree = "<group>"; };
+		D8D1BA791946D41F005D1CA3 /* iOS Simulator Screen shot Jun 9, 2014, 10.49.53 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iOS Simulator Screen shot Jun 9, 2014, 10.49.53 PM.png"; sourceTree = "<group>"; };
+		D8D1BA7A1946D41F005D1CA3 /* iOS Simulator Screen shot Jun 9, 2014, 10.49.32 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iOS Simulator Screen shot Jun 9, 2014, 10.49.32 PM.png"; sourceTree = "<group>"; };
 		D8FAFF0C1944318A0036ED12 /* MovieDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieDetailViewController.h; sourceTree = "<group>"; };
 		D8FAFF0D1944318A0036ED12 /* MovieDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieDetailViewController.m; sourceTree = "<group>"; };
 		D8FAFF0E1944318A0036ED12 /* MovieDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MovieDetailViewController.xib; sourceTree = "<group>"; };
@@ -151,6 +160,7 @@
 		D8AEEFC9194413A90045A919 /* MovieQ */ = {
 			isa = PBXGroup;
 			children = (
+				D8D1BA781946D411005D1CA3 /* screenshots */,
 				D8333036194620A400C4F75D /* images */,
 				D8FF8D5E19441F0C00EAA018 /* MovieCell.h */,
 				D8FF8D5F19441F0C00EAA018 /* MovieCell.m */,
@@ -163,6 +173,9 @@
 				D8AEEFF6194414100045A919 /* MovieQueueViewController.h */,
 				D8AEEFF7194414100045A919 /* MovieQueueViewController.m */,
 				D8AEEFF8194414100045A919 /* MovieQueueViewController.xib */,
+				D8BF05631946D1DD008F7659 /* MovieQueueTableViewControllerTest.h */,
+				D8BF05641946D1DD008F7659 /* MovieQueueTableViewControllerTest.m */,
+				D8BF05651946D1DD008F7659 /* MovieQueueTableViewControllerTest.xib */,
 				D8AEF000194415400045A919 /* Movie.h */,
 				D8AEF001194415400045A919 /* Movie.m */,
 				D8FF8D511944188300EAA018 /* data */,
@@ -200,6 +213,23 @@
 				D8AEEFE9194413A90045A919 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D8D1BA781946D411005D1CA3 /* screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				D8D1BA7D1946D423005D1CA3 /* version 0.1 */,
+			);
+			name = screenshots;
+			sourceTree = "<group>";
+		};
+		D8D1BA7D1946D423005D1CA3 /* version 0.1 */ = {
+			isa = PBXGroup;
+			children = (
+				D8D1BA791946D41F005D1CA3 /* iOS Simulator Screen shot Jun 9, 2014, 10.49.53 PM.png */,
+				D8D1BA7A1946D41F005D1CA3 /* iOS Simulator Screen shot Jun 9, 2014, 10.49.32 PM.png */,
+			);
+			name = "version 0.1";
 			sourceTree = "<group>";
 		};
 		D8FF8D511944188300EAA018 /* data */ = {
@@ -289,7 +319,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8FAFF101944318A0036ED12 /* MovieDetailViewController.xib in Resources */,
+				D8D1BA7C1946D41F005D1CA3 /* iOS Simulator Screen shot Jun 9, 2014, 10.49.32 PM.png in Resources */,
 				D8FF8D531944188300EAA018 /* boxoffice.json in Resources */,
+				D8D1BA7B1946D41F005D1CA3 /* iOS Simulator Screen shot Jun 9, 2014, 10.49.53 PM.png in Resources */,
+				D8BF05671946D1DD008F7659 /* MovieQueueTableViewControllerTest.xib in Resources */,
 				D8AEEFFA194414100045A919 /* MovieQueueViewController.xib in Resources */,
 				D8AEEFCE194413A90045A919 /* InfoPlist.strings in Resources */,
 				D8AEEFD9194413A90045A919 /* Images.xcassets in Resources */,
@@ -348,6 +381,7 @@
 			files = (
 				D8AEF002194415400045A919 /* Movie.m in Sources */,
 				D8FAFF0F1944318A0036ED12 /* MovieDetailViewController.m in Sources */,
+				D8BF05661946D1DD008F7659 /* MovieQueueTableViewControllerTest.m in Sources */,
 				D8AEEFD0194413A90045A919 /* main.m in Sources */,
 				D8FF8D6119441F0C00EAA018 /* MovieCell.m in Sources */,
 				D8AEEFF9194414100045A919 /* MovieQueueViewController.m in Sources */,

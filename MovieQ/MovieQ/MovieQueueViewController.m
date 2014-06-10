@@ -15,7 +15,9 @@
 
 @interface MovieQueueViewController ()
 
+- (void) refresh;
 @property (nonatomic, strong) NSArray *movies;
+@property (nonatomic, strong) UIRefreshControl *refreshControl;
 @end
 
 @implementation MovieQueueViewController
@@ -46,8 +48,20 @@
                   forCellReuseIdentifier:@"MovieCell"];
     [self loadMovieData];
 
-
+    // Initialize Refresh Control
+    self.refreshControl = [[UIRefreshControl alloc] init];
+    // Configure Refresh Control
+    [self.refreshControl addTarget:self
+                       action:@selector(refresh)
+             forControlEvents:UIControlEventValueChanged];
+    [self setRefreshControl:self.refreshControl];
     self.movieListTableView.rowHeight = 150;
+}
+
+- (void) refresh
+{
+    NSLog(@"refresh");
+    [self loadMovieData];
 }
 
 - (void) loadMovieData
@@ -84,6 +98,7 @@
                                [MBProgressHUD hideHUDForView:self.view animated:YES];
 
                                [self.movieListTableView reloadData];
+                               [self.refreshControl endRefreshing];
                            } ];
     
 }
