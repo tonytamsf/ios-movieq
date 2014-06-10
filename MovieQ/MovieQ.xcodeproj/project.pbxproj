@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		02A238A06A4540B199C18A3F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 67E65D5EC3D54149A82A0D41 /* libPods.a */; };
+		D8333038194620DF00C4F75D /* detail_view_placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = D8333037194620DF00C4F75D /* detail_view_placeholder.png */; };
 		D8AEEFC2194413A90045A919 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8AEEFC1194413A90045A919 /* Foundation.framework */; };
 		D8AEEFC4194413A90045A919 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8AEEFC3194413A90045A919 /* CoreGraphics.framework */; };
 		D8AEEFC6194413A90045A919 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8AEEFC5194413A90045A919 /* UIKit.framework */; };
@@ -46,6 +47,7 @@
 /* Begin PBXFileReference section */
 		67E65D5EC3D54149A82A0D41 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		908782F9E2F042C79B9B48CC /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		D8333037194620DF00C4F75D /* detail_view_placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = detail_view_placeholder.png; sourceTree = "<group>"; };
 		D8AEEFBE194413A90045A919 /* MovieQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieQ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8AEEFC1194413A90045A919 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D8AEEFC3194413A90045A919 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -105,6 +107,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D8333036194620A400C4F75D /* images */ = {
+			isa = PBXGroup;
+			children = (
+				D8333037194620DF00C4F75D /* detail_view_placeholder.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
 		D8AEEFB5194413A90045A919 = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +151,7 @@
 		D8AEEFC9194413A90045A919 /* MovieQ */ = {
 			isa = PBXGroup;
 			children = (
+				D8333036194620A400C4F75D /* images */,
 				D8FF8D5E19441F0C00EAA018 /* MovieCell.h */,
 				D8FF8D5F19441F0C00EAA018 /* MovieCell.m */,
 				D8FF8D6019441F0C00EAA018 /* MovieCell.xib */,
@@ -283,6 +294,7 @@
 				D8AEEFCE194413A90045A919 /* InfoPlist.strings in Resources */,
 				D8AEEFD9194413A90045A919 /* Images.xcassets in Resources */,
 				D8FF8D6219441F0C00EAA018 /* MovieCell.xib in Resources */,
+				D8333038194620DF00C4F75D /* detail_view_placeholder.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

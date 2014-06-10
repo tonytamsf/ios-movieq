@@ -13,6 +13,10 @@ Status: active Register ed: 1 minute ago
 - 7:58 - building cell
 
 ## Notes
+// TODO
+// Maybe need to clear cache?
+// 2014-06-09 10:11:32.354 MovieQ[20637:60b] *** Terminating app due to uncaught exception 'NSInvalidArgumentException', reason: '-[AFImageCache cachedImageForRequest:]: unrecognized selector sent to instance 0x8e84f40'
+
 // TODO remember to assign rootViewController
 // 2014-06-04 20:00:07.779 MovieQueue[14444:60b] Application windows are expected to have a root view controller at the end of application launch
 //
@@ -27,3 +31,4 @@ Ctrl-CMD Up to switch between
 
 ### Useful
 - http://cocoadocs.org/docsets/AFNetworking/2.2.4/index.html
+- https://github.com/matej/MBProgressHUD

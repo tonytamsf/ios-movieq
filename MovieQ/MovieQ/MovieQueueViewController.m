@@ -11,6 +11,7 @@
 #import "Movie.h"
 #import "UIImageView+AFNetworking.h"
 #import "MovieDetailViewController.h"
+#import "MBProgressHUD.h"
 
 @interface MovieQueueViewController ()
 
@@ -35,14 +36,7 @@
     self.movieListTableView.delegate = self;
     self.movieListTableView.dataSource = self;
     
-    NSString *url = @"http://api.rottentomatoes.com/api/public/v1.0/lists/dvds/top_rentals.json?apikey=t7anbdt8gp32yvw33cs92zkg&limit=10";
-    NSURL * urlToLoad = [NSURL URLWithString:url];
 
-    NSURL * resourcePathURL = [[NSBundle mainBundle] resourceURL];
-    if(resourcePathURL)
-    {
-        urlToLoad = [resourcePathURL URLByAppendingPathComponent:@"boxoffice.json"];
-    }
     
     NSLog(@"NIB %@", [UINib
                   nibWithNibName:@"MovieCell" bundle:nil]);
@@ -50,19 +44,48 @@
     [self.movieListTableView registerNib:[UINib
                                           nibWithNibName:@"MovieCell" bundle:nil]
                   forCellReuseIdentifier:@"MovieCell"];
+    [self loadMovieData];
+
+
+    self.movieListTableView.rowHeight = 150;
+}
+
+- (void) loadMovieData
+{
     
-    NSURLRequest *request = [NSURLRequest requestWithURL:urlToLoad];
+    NSString *openingMoviesURL = @"http://api.rottentomatoes.com/api/public/v1.0/lists/movies/opening.json";
+    NSString *topRentalsURL = @"http://api.rottentomatoes.com/api/public/v1.0/lists/dvds/top_rentals.json";
+    NSString *urlParams = @"?apikey=t7anbdt8gp32yvw33cs92zkg&limit=10";
+    NSString *url = [openingMoviesURL stringByAppendingString:urlParams];
+    NSURL * urlToLoad = [NSURL URLWithString:url];
+    
+#define DEBUG_NO_NETWORKING 0
+#if DEBUG_NO_NETWORKING == 1
+    NSURL * resourcePathURL = [[NSBundle mainBundle] resourceURL];
+
+    if(resourcePathURL)
+    {
+        urlToLoad = [resourcePathURL URLByAppendingPathComponent:@"boxoffice.json"];
+    }
+#endif
+    
+    
+    NSURLRequest *request = [[NSURLRequest alloc] initWithURL:urlToLoad
+                                                  cachePolicy:NSURLCacheStorageNotAllowed
+                                              timeoutInterval:1];
+    
+    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     [NSURLConnection sendAsynchronousRequest:request
                                        queue:[NSOperationQueue mainQueue]
                            completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
                                id object = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
                                NSLog(@"%@", object);
                                self.movies = [Movie moviesWithArray:object[@"movies"]];
+                               [MBProgressHUD hideHUDForView:self.view animated:YES];
+
                                [self.movieListTableView reloadData];
                            } ];
     
-
-    self.movieListTableView.rowHeight = 150;
 }
 - (void)didReceiveMemoryWarning
 {
